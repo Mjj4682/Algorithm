@@ -16,9 +16,7 @@ function solution(board, moves) {
             }
         }
     }
-    console.log(arrC)
     const arr = [...arrC];
-    console.log(arr)
     while(count){
         i=0;
         j=1;
@@ -37,6 +35,5 @@ function solution(board, moves) {
         if(arrC.length === arrFinal.length) count =false;
         else arrC = arrFinal;
     }
-    // console.log(arr, arrC)
     return arr.length - arrFinal.length;
 }
