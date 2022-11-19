@@ -1,5 +1,5 @@
 function solution(brown, yellow) {
-    const sumAll = brown + yellow
+    const sumAll = brown + yellow;
     const squtAll = Math.ceil(Math.sqrt(sumAll))
     for(let i = squtAll; i < brown; i++){
         for(let j = squtAll; j >= 1; j--){
