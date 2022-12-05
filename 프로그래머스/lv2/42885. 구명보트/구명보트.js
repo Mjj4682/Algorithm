@@ -2,7 +2,7 @@ function solution(people, limit) {
     people.sort(function(a, b) {
         return a - b;
     });
-    let answer = 0;
+    let answer = 0
     while(people.length !== 0){
         if(people[0] + people[people.length-1] <= limit){
             answer++
@@ -14,6 +14,5 @@ function solution(people, limit) {
             people.pop()
         }
     }
-    
     return answer;
 }
